@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    container_name: study-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/gcloud/application_default_credentials.json
+    volumes:
+      - ./study.gemini.md:/app/study.gemini.md
+      - ./ai-output:/app/output
+    # 🟢 이 서비스가 ai-network를 사용하도록 지정
+    networks:
+      - ai-network
+
+networks:
+  ai-network:
+    external: true
