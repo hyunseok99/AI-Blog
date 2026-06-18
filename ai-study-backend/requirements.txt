@@ -1,1 +1,9 @@
 # requirements
+fastapi>=0.111.0
+uvicorn>=0.30.0
+
+# google genAI SDK
+google-genai>=0.1.1
+
+# data scale
+pydantic>=2.7.0
