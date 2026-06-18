@@ -11,7 +11,7 @@ services:
     volumes:
       - ./study.gemini.md:/app/study.gemini.md
       - ./ai-output:/app/output
-    # 🟢 이 서비스가 ai-network를 사용하도록 지정
+      - ~/.config/gcloud:/gcloud
     networks:
       - ai-network
 
