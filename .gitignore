@@ -1,0 +1,33 @@
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# 로컬 테스트 생성물 (디렉토리 오염 방지)
+/generated_projects/
+/study-blog/
+/study/
+*.tmp
+
+# Python 관련 (FastAPI 개발용)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.pypy/
+.python-version
+
+# 가상환경 라이브러리 폴더들
+.venv/
+venv/
+env/
+ENV/
+lib/
+lib64/
+
+# OS 및 IDE 관련 잔재
+.DS_Store
+.vscode/
+.idea/
+*.log
